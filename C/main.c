@@ -43,7 +43,7 @@ int main() {
   while (1) {
     // Turn LED on
     // PORTB |= 0B000001;
-    PORTB |= (1 << PORTB5);
+    PORTB |= (1 << PORTB0);
     // "For the Port B Register turn on Port B pin 5"
     // As mentioned, in this context "turn on" is High
     
@@ -51,7 +51,7 @@ int main() {
 
     // Turn LED off
     // PORTB &= ~0B000001;
-    PORTB &= ~(1 << PORTB5);
+    PORTB &= ~(1 << PORTB0);
     // Similar to turning on but this is subtle in that the
     // PORTB AND NOT (SET PORTB5 1)
     // See that logically this ignore all other bits and turns off the LED
